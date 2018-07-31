@@ -21,8 +21,6 @@ namespace AppDemo
             }
         }
 
-        string imageSource;
-
         public OverviewPageModel()
         {
             VehicleState = new VehicleStatePageModel();
