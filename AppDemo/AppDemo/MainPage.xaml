@@ -5,12 +5,12 @@
              x:Class="AppDemo.MainPage">
 
     <StackLayout>
-        <Label>
+        <Label Text="Sample">
             <Label.Triggers>
                 <DataTrigger TargetType="Label" Binding="{Binding VehicleState.Tires.TypeSelectedIndex}" Value="0">
                     <Setter Property="Text" Value="Summer" />
                 </DataTrigger>
-            </Label.Triggers> >
+            </Label.Triggers> 
         </Label>
 
         <Button Text="Push" Clicked="Button_Clicked"/>
