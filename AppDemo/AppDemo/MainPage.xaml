@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppDemo"
+             x:Class="AppDemo.MainPage">
+
+    <StackLayout>
+        <Label>
+            <Label.Triggers>
+                <DataTrigger TargetType="Label" Binding="{Binding VehicleState.Tires.TypeSelectedIndex}" Value="0">
+                    <Setter Property="Text" Value="Summer" />
+                </DataTrigger>
+            </Label.Triggers> >
+        </Label>
+
+        <Button Text="Push" Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
